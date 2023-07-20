@@ -38,7 +38,8 @@
   # Enable the X11 windowing system.
   # services.xserver.enable = true;
 
-
+  programs.hyprland.enable = true;
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
   
 
   # Configure keymap in X11
