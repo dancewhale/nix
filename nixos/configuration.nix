@@ -85,9 +85,14 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  services.openssh.enable = true;
-  services.openssh.settings.PermitRootLogin = "yes";
-  
+  services.openssh = {
+    enable = true;
+    settings = {
+      PermitRootLogin = "yes";
+      Macs = [ "hmac-sha1" "hmac-sha1-96" "hmac-md5" "hmac-sha2-512-etm@openssh.com" "hmac-sha2-256-etm@openssh.com" "umac-128-etm@openssh.com" "hmac-sha2-512" "hmac-sha2-256"];
+    };
+    extraConfig = "PubkeyAcceptedAlgorithms +ssh-rsa";
+  };
   users.users."root".openssh.authorizedKeys.keys = [
   "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC24xA8nfgeMVfbpELpYU8IVNZAeIwmk5zeYmXIsaSYjK4lxG/SpfdApTY1a2QHNEP4x4JvwQXOsHs4oQ+yrpRXO8F4b/LjqwaLcReUC8AsAMQ7KzW6Hes7kIXsKaQbbUaYJSekaN1O2cC5/7RpvCnmsF1kyeuUDL3frYW5Fx/s7kC/o9dTFxwW+czrixPmJK79YxiY0DE4YmkZnnxi2zQYzxzBJNNpB+I9JySaNtkaZW7zFRWdEQIwfkxSmpJiJGQFEJamQ2tPBIisKWKdblanJ5HcmIlGdF4MuvE9H21AdUdJe/oXJSN4ibUjwiyH1i4BYVxm0QXJD8D5b3O/FkIt whale@dancewhaledeMacBook-Pro.local"
   ];
