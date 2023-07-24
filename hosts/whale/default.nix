@@ -1,18 +1,17 @@
 { inputs, config, pkgs, lib, ... }:
 {
   imports = [
-    inputs.nixos-hardware.nixosModules.lenovo-thinkpad-t480
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
 
-    ../common/dewm/sway.nix # Include this for a lighter DE
+    #../common/dewm/sway.nix # Include this for a lighter DE
     # ../common/dewm/kdeplasma.nix # Include this for fucking plasma desktop
-    ../common/dewm/gnome.nix # Include this for Gnome (the best of all)
+    #../common/dewm/gnome.nix # Include this for Gnome (the best of all)
   ];
 
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.efi.canTouchEfiVariables = false;
 
   #networking.hostName = "nuggets"; # Define your hostname.
   #networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -39,7 +38,6 @@
 
   services.xserver = {
     enable = true;
- #   videosDrivers = ["nvidia"];
     displayManager.gdm = {
         enable = true;
         wayland = true;
@@ -55,7 +53,7 @@
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
-    nvidiaPatches = true;
+    nvidiaPatches = false;
   };
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
@@ -63,9 +61,6 @@
 
   # Use same config for linux console
   console.useXkbConfig = true;
-
-  # Prevent Spotify from muting when another audio source is running
-  hardware.pulseaudio.extraConfig = "unload-module module-role-cork";
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;

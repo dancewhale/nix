@@ -45,26 +45,12 @@
 
   home.packages = with pkgs; [
     bat
-    calibre
-    cawbird
-    delta
-    deluge
     fzf
-    inkscape
     jq
-    lsd
-    ncdu
-    neofetch
-    newsflash
     unstable-pkgs.nodejs
     pyright
     ripgrep
-    rustup
     silver-searcher
-    stack
-    vlc
-    wpgtk
-    yarn
   ];
 }
 
