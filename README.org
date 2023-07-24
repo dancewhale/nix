@@ -20,5 +20,8 @@ configurations.
 
 #+begin_src sh
 $> sudo nixos-rebuild switch --flake .
-$> home-manager switch --flake .
+
+# switch home user
+$> nix build .#homeManagerConfigurations.whale.activationPackage
+$ >  result/active
 #+end_src

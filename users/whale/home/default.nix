@@ -10,12 +10,9 @@
 
   # Environment variables for Nuggets
   home.sessionVariables = {
-    EDITOR = "nvim";
-    GIT_EDITOR = "nvim";
-    VISUAL = "nvim";
-    DIFFPROG = "nvim -d";
-    MANPAGER = "nvim +Man!";
-    MANWIDTH = 999;
+    EDITOR = "vim";
+    GIT_EDITOR = "vim";
+    VISUAL = "vim";
   };
 
   # Basic Git configuration
@@ -47,6 +44,7 @@
     bat
     fzf
     jq
+    vim
     unstable-pkgs.nodejs
     pyright
     ripgrep
