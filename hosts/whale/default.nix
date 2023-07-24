@@ -49,13 +49,6 @@
     nvidia.modesetting.enable = false;
   };
 
-  # hyprland
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-    nvidiaPatches = false;
-  };
-
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
 

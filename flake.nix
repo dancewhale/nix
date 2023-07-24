@@ -17,6 +17,8 @@
     flake-programs-sqlite.inputs.nixpkgs.follows = "nixpkgs";
 
     flake-utils.url = "github:numtide/flake-utils";
+
+    hyprland.url = "github:hyprwm/Hyprland";
   };
 
   outputs = inputs:
