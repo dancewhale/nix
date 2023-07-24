@@ -11,6 +11,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # A simple flake to automagically specify programs.sqlite for command-not-found.
+    flake-programs-sqlite.url = "github:wamserma/flake-programs-sqlite";
+    flake-programs-sqlite.inputs.nixpkgs.follows = "nixpkgs";
+
     flake-utils.url = "github:numtide/flake-utils";
   };
 

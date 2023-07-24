@@ -8,6 +8,7 @@
       };
       modules = [
         ../hosts/${hostname}
+        inputs.flake-programs-sqlite.nixosModules.programs-sqlite
         {
           networking.hostName = hostname;
 
