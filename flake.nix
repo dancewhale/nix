@@ -32,7 +32,7 @@
         };
       };
       homeConfigurations = {
-        "whale@whale" = lib.mkHome {
+        "whale" = lib.mkHome {
           username = "whale";
           system = "aarch64-linux";
           hostname = "whale";

@@ -19,13 +19,6 @@
     '';
     extraPackages = with pkgs; [
       tree-sitter
-
-      # LSP
-      easy-hls
-      hlint
-      # easy-ps.purescript-language-server
-      nodePackages.typescript
-      nodePackages.typescript-language-server
       rnix-lsp
       rust-analyzer
       sumneko-lua-language-server
