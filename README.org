@@ -25,3 +25,8 @@ $> sudo nixos-rebuild switch --flake .
 $> nix build .#homeManagerConfigurations.whale.activationPackage
 $ >  result/active
 #+end_src
+
+
+
+*** Thanks
+https://github.com/Harmos274/nixfiles.git

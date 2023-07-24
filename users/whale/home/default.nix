@@ -1,4 +1,4 @@
-{ config, pkgs, unstable-pkgs, ... }:
+{ inputs, config, pkgs, unstable-pkgs, ... }:
 {
   imports = [
     ./python

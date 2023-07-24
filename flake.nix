@@ -4,12 +4,13 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.05";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
     home-manager = {
       url = "github:nix-community/home-manager/release-23.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nix-doom-emacs.url = "github:nix-community/nix-doom-emacs";
 
     # A simple flake to automagically specify programs.sqlite for command-not-found.
     flake-programs-sqlite.url = "github:wamserma/flake-programs-sqlite";
