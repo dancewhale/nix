@@ -3,7 +3,7 @@
 {
   home = {
     sessionVariables = {
-      EDITOR = "nvim";
+      EDITOR = "vim";
       BROWSER = "firefox";
       TERMINAL = "kitty";
       # GTK_IM_MODULE = "fcitx5";

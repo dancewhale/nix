@@ -1,17 +1,7 @@
 { inputs, config, lib, pkgs, ... }:
 
 {
-  imports = [
-    (import ./hypr-variables.nix)
-  ];
   programs = {
-    bash = {
-      initExtra = ''
-        if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
-           exec  Hyprland
-        fi
-      '';
-    };
     fish = {
       loginShellInit = ''
         set TTY1 (tty)
