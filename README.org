@@ -3,7 +3,7 @@
 - DE: Hyprland
 - Terminal Emulator: Kitty / Foot
 - Shell: Fish
-- Editor: Neovim (nightly)
+- Editor: Emacs
 
 You may have noted that i barely use the power of nix configs. There is two major reasons behind that, firstly
 i am very new in the nix/os world. Secondly, i also **need** to be able to use my configurations outside of a

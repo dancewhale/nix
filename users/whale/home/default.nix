@@ -3,8 +3,6 @@
   imports = [
     ./python
     ./shell
-    #./latex
-    #./custom-fonts
   ];
 
 

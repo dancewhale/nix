@@ -1,8 +1,7 @@
 { config, pkgs, lib, ... }:
 {
   imports = [
-    # ./doom-emacs.nix
-    ./neovim.nix
+    ./doom-emacs.nix
     ./kitty.nix
     ./fish.nix
     ./foot.nix

@@ -99,15 +99,15 @@
     fuse
     gcc
     git
+    lsd
     gnumake
-    neovim
     python3
     tree
     wget
   ];
 
-  # Set Neovim as default editor
-  environment.variables.EDITOR = "nvim";
+  # Set vim as default editor
+  environment.variables.EDITOR = "vim";
   environment.variables.DOTNET_SYSTEM_GLOBALIZATION_INVARIANT = "1";
 
   virtualisation = {
