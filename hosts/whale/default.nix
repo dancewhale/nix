@@ -3,10 +3,6 @@
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
-
-    #../common/dewm/sway.nix # Include this for a lighter DE
-    # ../common/dewm/kdeplasma.nix # Include this for fucking plasma desktop
-    #../common/dewm/gnome.nix # Include this for Gnome (the best of all)
   ];
 
   # Use the systemd-boot EFI boot loader.
