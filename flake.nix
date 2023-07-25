@@ -28,8 +28,8 @@
     in
     {
       nixosConfigurations = {
-        whale = lib.mkSystem {
-          hostname = "whale";
+        prl = lib.mkSystem {
+          hostname = "prl";
           system = "aarch64-linux";
           users = [ "whale" ];
         };
@@ -38,7 +38,7 @@
         whale = lib.mkHome {
           username = "whale";
           system = "aarch64-linux";
-          hostname = "whale";
+          hostname = "prl";
           stateVersion = "23.05";
         };
       };

@@ -3,7 +3,6 @@
   imports = [
     ./python
     ./shell
-    ./desktop
   ];
 
 
